@@ -1,10 +1,7 @@
-console.log("Portfolio Loaded 🚀");
-
-// smooth scroll effect
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e){
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener("click", e=>{
         e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
+        document.querySelector(a.getAttribute("href")).scrollIntoView({
             behavior:"smooth"
         });
     });
