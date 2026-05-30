@@ -1,95 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-:root{
-    --primary:#00cec9;
-    --dark:#2c3e50;
-    --light:#f5f6fa;
-    --white:#ffffff;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
-    font-family:'Poppins', sans-serif;
-    background:var(--light);
+    margin:0;
+    font-family:Poppins, sans-serif;
+    background:#f4f6f8;
     color:#2d3436;
 }
 
-/* HEADER */
-header{
-    background:var(--dark);
+/* HERO */
+.hero{
+    background:#2c3e50;
     color:white;
-    text-align:center;
-    padding:70px 20px;
+    padding:60px 20px;
 }
 
-header h1 span{
-    color:var(--primary);
+.hero-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1000px;
+    margin:auto;
 }
 
-/* SECTION BOX */
-section{
-    max-width:900px;
-    margin:30px auto;
-    background:var(--white);
-    padding:25px;
+.hero-img img{
+    width:200px;
     border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
 }
 
-section:hover{
-    transform:translateY(-3px);
+.hero h1 span{
+    color:#00cec9;
 }
 
-/* HEADING */
-h2{
-    color:var(--dark);
-    border-left:5px solid var(--primary);
-    padding-left:10px;
-    margin-bottom:15px;
-}
-
-/* LIST */
-ul{
-    line-height:1.8;
-}
-
-/* CONTACT */
-#contact{
-    background:var(--dark);
-    color:white;
-    text-align:center;
-}
-
-#contact h2{
-    color:white;
-    border:none;
-}
-
-/* BUTTON STYLE */
 .btn{
     display:inline-block;
     padding:10px 20px;
-    background:var(--primary);
+    background:#00cec9;
     color:white;
     border-radius:5px;
     text-decoration:none;
     margin-top:10px;
-    transition:0.3s;
 }
 
-.btn:hover{
-    background:#00a8a8;
+/* SECTION */
+section{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    border-left:5px solid #00cec9;
+    padding-left:10px;
+}
+
+/* CARD */
+.card{
+    background:#f1f2f6;
+    padding:15px;
+    margin-top:10px;
+    border-radius:8px;
+}
+
+/* CONTACT */
+#contact{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-    section{
-        margin:15px;
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-img{
+        margin-top:20px;
     }
 }
