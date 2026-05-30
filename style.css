@@ -1,86 +1,95 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root{
+    --primary:#00cec9;
+    --dark:#2c3e50;
+    --light:#f5f6fa;
+    --white:#ffffff;
+}
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:'Poppins', sans-serif;
-    background:#f5f6fa;
-    color:#333;
+    background:var(--light);
+    color:#2d3436;
 }
 
-/* container */
-.container{
-    width:85%;
-    margin:auto;
-}
-
-/* NAV */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 0;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:20px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
-}
-
-/* HERO */
-.hero{
+/* HEADER */
+header{
+    background:var(--dark);
+    color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:70px 20px;
 }
 
-.hero h1{
-    font-size:40px;
+header h1 span{
+    color:var(--primary);
 }
 
-.hero span{
-    color:#6c5ce7;
+/* SECTION BOX */
+section{
+    max-width:900px;
+    margin:30px auto;
+    background:var(--white);
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-/* BUTTON */
+section:hover{
+    transform:translateY(-3px);
+}
+
+/* HEADING */
+h2{
+    color:var(--dark);
+    border-left:5px solid var(--primary);
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+/* LIST */
+ul{
+    line-height:1.8;
+}
+
+/* CONTACT */
+#contact{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+}
+
+#contact h2{
+    color:white;
+    border:none;
+}
+
+/* BUTTON STYLE */
 .btn{
     display:inline-block;
     padding:10px 20px;
-    background:#6c5ce7;
+    background:var(--primary);
     color:white;
-    text-decoration:none;
     border-radius:5px;
-    margin-top:15px;
+    text-decoration:none;
+    margin-top:10px;
+    transition:0.3s;
 }
 
-/* SECTION */
-section{
-    padding:60px 0;
-    background:white;
-    margin-top:20px;
-    border-radius:10px;
+.btn:hover{
+    background:#00a8a8;
 }
 
-h2{
-    text-align:center;
-    margin-bottom:20px;
-}
-
-/* SOCIAL */
-.social a{
-    margin-right:10px;
-    font-size:20px;
-    color:#333;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
-    margin-top:20px;
+/* RESPONSIVE */
+@media(max-width:768px){
+    section{
+        margin:15px;
+    }
 }
