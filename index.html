@@ -1,62 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afrin Jahan Asa | Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-<script src="js/app.js"></script>
+
 <body>
 
-<header>
-    <h1>Hello, I'm <span>Afrin Jahan Asa</span></h1>
-    <p>CSE Graduate | Web Developer | Machine Learning Enthusiast</p>
+<!-- HERO SECTION -->
+<header class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Afrin Jahan Asa</span></h1>
+            <p>CSE Graduate | Web Developer | ML Enthusiast</p>
+
+            <a href="assets/asa-cv.pdf" class="btn" download>Download CV</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="images/asa.jpg" alt="Profile Image">
+        </div>
+
+    </div>
+
 </header>
 
+<!-- ABOUT -->
 <section id="about">
     <h2>Career Objective</h2>
     <p>
-        Driven Computer Science and Engineering graduate with experience in software development,
-        machine learning, and web development.
+        Driven Computer Science and Engineering graduate skilled in software development,
+        machine learning, web development and digital operations.
     </p>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
     <h2>Education</h2>
 
-    <p><b>BSc in CSE</b> – DIU (CGPA 3.72)</p>
-    <p><b>HSC</b> – Kurigram Govt Women’s College</p>
-    <p><b>SSC</b> – Kurigram Govt Girls High School</p>
+    <div class="card">
+        <b>BSc in CSE</b> – Daffodil International University (CGPA 3.72)
+    </div>
+
+    <div class="card">
+        <b>HSC</b> – Kurigram Govt Women’s College (GPA 3.67)
+    </div>
+
+    <div class="card">
+        <b>SSC</b> – Kurigram Govt Girls High School (GPA 4.61)
+    </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
-    <ul>
-        <li>Handwritten Prescription Recognition (CNN)</li>
-        <li>Heart Disease Prediction (ML)</li>
-        <li>Pack Your Bag App (Java Android)</li>
-        <li>Automated Watering System (IoT)</li>
-    </ul>
+    <div class="card">
+        Handwritten Prescription Recognition (CNN + TensorFlow)
+    </div>
+
+    <div class="card">
+        Heart Disease Prediction (Machine Learning)
+    </div>
+
+    <div class="card">
+        Pack Your Bag Mobile App (Java)
+    </div>
+
+    <div class="card">
+        Automated Watering System (IoT)
+    </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="card">
+        HTML, CSS, JavaScript, Python, Java, C, MySQL
+    </div>
+
+    <div class="card">
+        Git & GitHub, Data Analysis, Problem Solving
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section id="experience">
     <h2>Experience</h2>
 
-    <p>Digital Operations Executive – Art Engineering & Architects (2025–2026)</p>
+    <div class="card">
+        Digital Operations Executive – Art Engineering & Architects (2025–2026)
+    </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
 
     <p>Email: asa15-14594@diu.edu.bd</p>
     <p>Phone: +8801318946825</p>
     <p>Location: Dhaka, Bangladesh</p>
+
 </section>
 
+<script src="js/app.js"></script>
 </body>
+
 </html>
